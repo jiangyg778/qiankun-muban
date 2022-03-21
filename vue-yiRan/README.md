@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Yg-element
-基于element二次封装1
-=======
 # yiran-ui
 
 ## Project setup
@@ -21,4 +17,3 @@ yarn build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
->>>>>>> dev
