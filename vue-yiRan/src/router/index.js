@@ -3,14 +3,7 @@ import Home from "@/views/home";
 export const routes = [
   {
     path: "/",
-    name: "Index",
-    component: () =>
-      import(/* webpackChunkName: "index" */ "../views/index/index.vue"),
-  },
-  ,
-  {
-    path: "/ui",
-    name: "ui",
+    name: "index",
     redirect: "/form",
     component: () =>
       import(/* webpackChunkName: "index" */ "../layouts/index.vue"),

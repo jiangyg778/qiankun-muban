@@ -7,7 +7,10 @@ module.exports = {
         ...webpackConfig.output,
         library: "m-react",
         libraryTarget: "umd",
-        publicPath: "//localhost:30000/",
+        publicPath:
+          process.env.NODE_ENV === "production"
+            ? "./"
+            : "http://localhost:30000",
         jsonpFunction: `webpackJsonp_m-react`,
       };
       return webpackConfig;

@@ -15,13 +15,11 @@ function render(props = {}) {
       : document.getElementById("root")
   );
 }
-console.log(window.__POWERED_BY_QIANKUN__, 2222);
 if (!window.__POWERED_BY_QIANKUN__) {
   render();
 }
 export async function bootstrap(props) {}
 export async function mount(props) {
-  console.log("react-yiran", 113333);
   render(props);
 }
 export async function unmount(props = {}) {

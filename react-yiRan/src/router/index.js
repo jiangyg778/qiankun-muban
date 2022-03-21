@@ -4,6 +4,8 @@ import Control from "@/pages/control";
 function Router() {
   return (
     <Routes>
+      <Route path="/" element={<Control />} />
+
       <Route path="/react/control" element={<Control />} />
     </Routes>
   );

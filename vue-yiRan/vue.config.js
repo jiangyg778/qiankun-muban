@@ -6,7 +6,8 @@ module.exports = {
   chainWebpack: (config) => {
     config.resolve.alias.set("@", resolve("src"));
   },
-  publicPath: "http://localhost:40000",
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/" : "http://localhost:40000",
   devServer: {
     port: 40000,
     headers: {

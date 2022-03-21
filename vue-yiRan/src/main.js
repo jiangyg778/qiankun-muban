@@ -12,7 +12,7 @@ let router;
 let app;
 
 function render(props = {}) {
-  history = createWebHistory("/vue-yiRan");
+  history = createWebHistory();
   router = createRouter({
     history,
     routes,
